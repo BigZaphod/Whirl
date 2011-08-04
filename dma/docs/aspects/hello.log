@@ -1,0 +1,420 @@
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [0-noop|_], clockwise spin, value(0)), ring(math, [0-noop|_], clockwise spin, value(0))], memory([cell(0, value(0))]), program(0-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [1-exit|_], clockwise spin, value(0)), ring(math, [0-noop|_], clockwise spin, value(0))], memory([cell(0, value(0))]), program(1-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [2-one|_], clockwise spin, value(0)), ring(math, [0-noop|_], clockwise spin, value(0))], memory([cell(0, value(0))]), program(2-0))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(0)), [ring(ops, [2-one|_], counterclockwise spin, value(0)), ring(math, [0-noop|_], clockwise spin, value(0))], memory([cell(0, value(0))]), program(3-0))
+** going into interpret/2 with program(math, history(executed, last_instruction(0)), [ring(ops, [2-one|_], clockwise spin, value(1)), ring(math, [0-noop|_], clockwise spin, value(0))], memory([cell(0, value(0))]), program(4-1))
+** going into interpret/2 with program(math, history(quescient, last_instruction(1)), [ring(math, [1-load|_], clockwise spin, value(0)), ring(ops, [2-one|_], clockwise spin, value(1))], memory([cell(0, value(0))]), program(5-1))
+** going into interpret/2 with program(math, history(quescient, last_instruction(1)), [ring(math, [2-store|_], clockwise spin, value(0)), ring(ops, [2-one|_], clockwise spin, value(1))], memory([cell(0, value(0))]), program(6-1))
+** going into interpret/2 with program(math, history(quescient, last_instruction(1)), [ring(math, [3-add|_], clockwise spin, value(0)), ring(ops, [2-one|_], clockwise spin, value(1))], memory([cell(0, value(0))]), program(7-0))
+** going into interpret/2 with program(math, history(quescient, last_instruction(0)), [ring(math, [3-add|_], counterclockwise spin, value(0)), ring(ops, [2-one|_], clockwise spin, value(1))], memory([cell(0, value(0))]), program(8-0))
+** going into interpret/2 with program(ops, history(executed, last_instruction(0)), [ring(math, [3-add|_], clockwise spin, value(0)), ring(ops, [2-one|_], clockwise spin, value(1))], memory([cell(0, value(0))]), program(9-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [3-zero|_], clockwise spin, value(1)), ring(math, [3-add|_], clockwise spin, value(0))], memory([cell(0, value(0))]), program(10-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [4-load|_], clockwise spin, value(1)), ring(math, [3-add|_], clockwise spin, value(0))], memory([cell(0, value(0))]), program(11-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [5-store|_], clockwise spin, value(1)), ring(math, [3-add|_], clockwise spin, value(0))], memory([cell(0, value(0))]), program(12-0))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(0)), [ring(ops, [5-store|_], counterclockwise spin, value(1)), ring(math, [3-add|_], clockwise spin, value(0))], memory([cell(0, value(0))]), program(13-0))
+** going into interpret/2 with program(math, history(executed, last_instruction(0)), [ring(ops, [5-store|_], clockwise spin, value(1)), ring(math, [3-add|_], clockwise spin, value(0))], memory([cell(0, value(1))]), program(14-0))
+** going into interpret/2 with program(math, history(quescient, last_instruction(0)), [ring(math, [3-add|_], counterclockwise spin, value(0)), ring(ops, [5-store|_], clockwise spin, value(1))], memory([cell(0, value(1))]), program(15-0))
+** going into interpret/2 with program(ops, history(executed, last_instruction(0)), [ring(math, [3-add|_], clockwise spin, value(1)), ring(ops, [5-store|_], clockwise spin, value(1))], memory([cell(0, value(1))]), program(16-0))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(0)), [ring(ops, [5-store|_], counterclockwise spin, value(1)), ring(math, [3-add|_], clockwise spin, value(1))], memory([cell(0, value(1))]), program(17-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [4-load|_], counterclockwise spin, value(1)), ring(math, [3-add|_], clockwise spin, value(1))], memory([cell(0, value(1))]), program(18-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [3-zero|_], counterclockwise spin, value(1)), ring(math, [3-add|_], clockwise spin, value(1))], memory([cell(0, value(1))]), program(19-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [2-one|_], counterclockwise spin, value(1)), ring(math, [3-add|_], clockwise spin, value(1))], memory([cell(0, value(1))]), program(20-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [1-exit|_], counterclockwise spin, value(1)), ring(math, [3-add|_], clockwise spin, value(1))], memory([cell(0, value(1))]), program(21-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [0-noop|_], counterclockwise spin, value(1)), ring(math, [3-add|_], clockwise spin, value(1))], memory([cell(0, value(1))]), program(22-0))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(0)), [ring(ops, [0-noop|_], clockwise spin, value(1)), ring(math, [3-add|_], clockwise spin, value(1))], memory([cell(0, value(1))]), program(23-0))
+** going into interpret/2 with program(math, history(executed, last_instruction(0)), [ring(ops, [0-noop|_], counterclockwise spin, value(1)), ring(math, [3-add|_], clockwise spin, value(1))], memory([cell(0, value(1))]), program(24-0))
+** going into interpret/2 with program(math, history(quescient, last_instruction(0)), [ring(math, [3-add|_], counterclockwise spin, value(1)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(0, value(1))]), program(25-0))
+** going into interpret/2 with program(ops, history(executed, last_instruction(0)), [ring(math, [3-add|_], clockwise spin, value(2)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(0, value(1))]), program(26-0))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(0)), [ring(ops, [0-noop|_], clockwise spin, value(1)), ring(math, [3-add|_], clockwise spin, value(2))], memory([cell(0, value(1))]), program(27-0))
+** going into interpret/2 with program(math, history(executed, last_instruction(0)), [ring(ops, [0-noop|_], counterclockwise spin, value(1)), ring(math, [3-add|_], clockwise spin, value(2))], memory([cell(0, value(1))]), program(28-0))
+** going into interpret/2 with program(math, history(quescient, last_instruction(0)), [ring(math, [3-add|_], counterclockwise spin, value(2)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(0, value(1))]), program(29-1))
+** going into interpret/2 with program(math, history(quescient, last_instruction(1)), [ring(math, [2-store|_], counterclockwise spin, value(2)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(0, value(1))]), program(30-0))
+** going into interpret/2 with program(math, history(quescient, last_instruction(0)), [ring(math, [2-store|_], clockwise spin, value(2)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(0, value(1))]), program(31-0))
+** going into interpret/2 with program(ops, history(executed, last_instruction(0)), [ring(math, [2-store|_], counterclockwise spin, value(2)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(0, value(2))]), program(32-0))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(0)), [ring(ops, [0-noop|_], clockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(2))], memory([cell(0, value(2))]), program(33-0))
+** going into interpret/2 with program(math, history(executed, last_instruction(0)), [ring(ops, [0-noop|_], counterclockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(2))], memory([cell(0, value(2))]), program(34-1))
+** going into interpret/2 with program(math, history(quescient, last_instruction(1)), [ring(math, [1-load|_], counterclockwise spin, value(2)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(0, value(2))]), program(35-1))
+** going into interpret/2 with program(math, history(quescient, last_instruction(1)), [ring(math, [0-noop|_], counterclockwise spin, value(2)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(0, value(2))]), program(36-1))
+** going into interpret/2 with program(math, history(quescient, last_instruction(1)), [ring(math, [11-neg|_], counterclockwise spin, value(2)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(0, value(2))]), program(37-1))
+** going into interpret/2 with program(math, history(quescient, last_instruction(1)), [ring(math, [10-not|_], counterclockwise spin, value(2)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(0, value(2))]), program(38-1))
+** going into interpret/2 with program(math, history(quescient, last_instruction(1)), [ring(math, [9- (=)|_], counterclockwise spin, value(2)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(0, value(2))]), program(39-0))
+** going into interpret/2 with program(math, history(quescient, last_instruction(0)), [ring(math, [9- (=)|_], clockwise spin, value(2)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(0, value(2))]), program(40-0))
+** going into interpret/2 with program(ops, history(executed, last_instruction(0)), [ring(math, [9- (=)|_], counterclockwise spin, value(1)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(0, value(2))]), program(41-0))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(0)), [ring(ops, [0-noop|_], clockwise spin, value(1)), ring(math, [9- (=)|_], counterclockwise spin, value(1))], memory([cell(0, value(2))]), program(42-0))
+** going into interpret/2 with program(math, history(executed, last_instruction(0)), [ring(ops, [0-noop|_], counterclockwise spin, value(1)), ring(math, [9- (=)|_], counterclockwise spin, value(1))], memory([cell(0, value(2))]), program(43-1))
+** going into interpret/2 with program(math, history(quescient, last_instruction(1)), [ring(math, [8- (>)|_], counterclockwise spin, value(1)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(0, value(2))]), program(44-1))
+** going into interpret/2 with program(math, history(quescient, last_instruction(1)), [ring(math, [7- (<)|_], counterclockwise spin, value(1)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(0, value(2))]), program(45-1))
+** going into interpret/2 with program(math, history(quescient, last_instruction(1)), [ring(math, [6-zero|_], counterclockwise spin, value(1)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(0, value(2))]), program(46-1))
+** going into interpret/2 with program(math, history(quescient, last_instruction(1)), [ring(math, [5-div|_], counterclockwise spin, value(1)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(0, value(2))]), program(47-1))
+** going into interpret/2 with program(math, history(quescient, last_instruction(1)), [ring(math, [4-mult|_], counterclockwise spin, value(1)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(0, value(2))]), program(48-1))
+** going into interpret/2 with program(math, history(quescient, last_instruction(1)), [ring(math, [3-add|_], counterclockwise spin, value(1)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(0, value(2))]), program(49-0))
+** going into interpret/2 with program(math, history(quescient, last_instruction(0)), [ring(math, [3-add|_], clockwise spin, value(1)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(0, value(2))]), program(50-0))
+** going into interpret/2 with program(ops, history(executed, last_instruction(0)), [ring(math, [3-add|_], counterclockwise spin, value(3)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(0, value(2))]), program(51-0))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(0)), [ring(ops, [0-noop|_], clockwise spin, value(1)), ring(math, [3-add|_], counterclockwise spin, value(3))], memory([cell(0, value(2))]), program(52-0))
+** going into interpret/2 with program(math, history(executed, last_instruction(0)), [ring(ops, [0-noop|_], counterclockwise spin, value(1)), ring(math, [3-add|_], counterclockwise spin, value(3))], memory([cell(0, value(2))]), program(53-0))
+** going into interpret/2 with program(math, history(quescient, last_instruction(0)), [ring(math, [3-add|_], clockwise spin, value(3)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(0, value(2))]), program(54-0))
+** going into interpret/2 with program(ops, history(executed, last_instruction(0)), [ring(math, [3-add|_], counterclockwise spin, value(5)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(0, value(2))]), program(55-0))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(0)), [ring(ops, [0-noop|_], clockwise spin, value(1)), ring(math, [3-add|_], counterclockwise spin, value(5))], memory([cell(0, value(2))]), program(56-0))
+** going into interpret/2 with program(math, history(executed, last_instruction(0)), [ring(ops, [0-noop|_], counterclockwise spin, value(1)), ring(math, [3-add|_], counterclockwise spin, value(5))], memory([cell(0, value(2))]), program(57-0))
+** going into interpret/2 with program(math, history(quescient, last_instruction(0)), [ring(math, [3-add|_], clockwise spin, value(5)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(0, value(2))]), program(58-1))
+** going into interpret/2 with program(math, history(quescient, last_instruction(1)), [ring(math, [4-mult|_], clockwise spin, value(5)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(0, value(2))]), program(59-0))
+** going into interpret/2 with program(math, history(quescient, last_instruction(0)), [ring(math, [4-mult|_], counterclockwise spin, value(5)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(0, value(2))]), program(60-0))
+** going into interpret/2 with program(ops, history(executed, last_instruction(0)), [ring(math, [4-mult|_], clockwise spin, value(10)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(0, value(2))]), program(61-0))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(0)), [ring(ops, [0-noop|_], clockwise spin, value(1)), ring(math, [4-mult|_], clockwise spin, value(10))], memory([cell(0, value(2))]), program(62-0))
+** going into interpret/2 with program(math, history(executed, last_instruction(0)), [ring(ops, [0-noop|_], counterclockwise spin, value(1)), ring(math, [4-mult|_], clockwise spin, value(10))], memory([cell(0, value(2))]), program(63-0))
+** going into interpret/2 with program(math, history(quescient, last_instruction(0)), [ring(math, [4-mult|_], counterclockwise spin, value(10)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(0, value(2))]), program(64-1))
+** going into interpret/2 with program(math, history(quescient, last_instruction(1)), [ring(math, [3-add|_], counterclockwise spin, value(10)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(0, value(2))]), program(65-1))
+** going into interpret/2 with program(math, history(quescient, last_instruction(1)), [ring(math, [2-store|_], counterclockwise spin, value(10)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(0, value(2))]), program(66-0))
+** going into interpret/2 with program(math, history(quescient, last_instruction(0)), [ring(math, [2-store|_], clockwise spin, value(10)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(0, value(2))]), program(67-0))
+** going into interpret/2 with program(ops, history(executed, last_instruction(0)), [ring(math, [2-store|_], counterclockwise spin, value(10)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(0, value(10))]), program(68-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [11-ascIO|_], counterclockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(10))], memory([cell(0, value(10))]), program(69-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [10-intIO|_], counterclockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(10))], memory([cell(0, value(10))]), program(70-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [9-if|_], counterclockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(10))], memory([cell(0, value(10))]), program(71-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [8-logic|_], counterclockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(10))], memory([cell(0, value(10))]), program(72-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [7-dadd|_], counterclockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(10))], memory([cell(0, value(10))]), program(73-0))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(0)), [ring(ops, [7-dadd|_], clockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(10))], memory([cell(0, value(10))]), program(74-0))
+** going into interpret/2 with program(math, history(executed, last_instruction(0)), [ring(ops, [7-dadd|_], counterclockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(10))], memory([cell(1, 0), cell(0, value(10))]), program(75-0))
+** going into interpret/2 with program(math, history(quescient, last_instruction(0)), [ring(math, [2-store|_], clockwise spin, value(10)), ring(ops, [7-dadd|_], counterclockwise spin, value(1))], memory([cell(1, 0), cell(0, value(10))]), program(76-0))
+** going into interpret/2 with program(ops, history(executed, last_instruction(0)), [ring(math, [2-store|_], counterclockwise spin, value(10)), ring(ops, [7-dadd|_], counterclockwise spin, value(1))], memory([cell(1, value(10)), cell(0, value(10))]), program(77-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [6-padd|_], counterclockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(10))], memory([cell(1, value(10)), cell(0, value(10))]), program(78-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [5-store|_], counterclockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(10))], memory([cell(1, value(10)), cell(0, value(10))]), program(79-0))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(0)), [ring(ops, [5-store|_], clockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(10))], memory([cell(1, value(10)), cell(0, value(10))]), program(80-0))
+** going into interpret/2 with program(math, history(executed, last_instruction(0)), [ring(ops, [5-store|_], counterclockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(10))], memory([cell(1, value(1)), cell(0, value(10))]), program(81-0))
+** going into interpret/2 with program(math, history(quescient, last_instruction(0)), [ring(math, [2-store|_], clockwise spin, value(10)), ring(ops, [5-store|_], counterclockwise spin, value(1))], memory([cell(1, value(1)), cell(0, value(10))]), program(82-1))
+** going into interpret/2 with program(math, history(quescient, last_instruction(1)), [ring(math, [3-add|_], clockwise spin, value(10)), ring(ops, [5-store|_], counterclockwise spin, value(1))], memory([cell(1, value(1)), cell(0, value(10))]), program(83-0))
+** going into interpret/2 with program(math, history(quescient, last_instruction(0)), [ring(math, [3-add|_], counterclockwise spin, value(10)), ring(ops, [5-store|_], counterclockwise spin, value(1))], memory([cell(1, value(1)), cell(0, value(10))]), program(84-0))
+** going into interpret/2 with program(ops, history(executed, last_instruction(0)), [ring(math, [3-add|_], clockwise spin, value(11)), ring(ops, [5-store|_], counterclockwise spin, value(1))], memory([cell(1, value(1)), cell(0, value(10))]), program(85-0))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(0)), [ring(ops, [5-store|_], clockwise spin, value(1)), ring(math, [3-add|_], clockwise spin, value(11))], memory([cell(1, value(1)), cell(0, value(10))]), program(86-0))
+** going into interpret/2 with program(math, history(executed, last_instruction(0)), [ring(ops, [5-store|_], counterclockwise spin, value(1)), ring(math, [3-add|_], clockwise spin, value(11))], memory([cell(1, value(1)), cell(0, value(10))]), program(87-0))
+** going into interpret/2 with program(math, history(quescient, last_instruction(0)), [ring(math, [3-add|_], counterclockwise spin, value(11)), ring(ops, [5-store|_], counterclockwise spin, value(1))], memory([cell(1, value(1)), cell(0, value(10))]), program(88-1))
+** going into interpret/2 with program(math, history(quescient, last_instruction(1)), [ring(math, [2-store|_], counterclockwise spin, value(11)), ring(ops, [5-store|_], counterclockwise spin, value(1))], memory([cell(1, value(1)), cell(0, value(10))]), program(89-0))
+** going into interpret/2 with program(math, history(quescient, last_instruction(0)), [ring(math, [2-store|_], clockwise spin, value(11)), ring(ops, [5-store|_], counterclockwise spin, value(1))], memory([cell(1, value(1)), cell(0, value(10))]), program(90-0))
+** going into interpret/2 with program(ops, history(executed, last_instruction(0)), [ring(math, [2-store|_], counterclockwise spin, value(11)), ring(ops, [5-store|_], counterclockwise spin, value(1))], memory([cell(1, value(11)), cell(0, value(10))]), program(91-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [4-load|_], counterclockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(11))], memory([cell(1, value(11)), cell(0, value(10))]), program(92-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [3-zero|_], counterclockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(11))], memory([cell(1, value(11)), cell(0, value(10))]), program(93-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [2-one|_], counterclockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(11))], memory([cell(1, value(11)), cell(0, value(10))]), program(94-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [1-exit|_], counterclockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(11))], memory([cell(1, value(11)), cell(0, value(10))]), program(95-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [0-noop|_], counterclockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(11))], memory([cell(1, value(11)), cell(0, value(10))]), program(96-0))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(0)), [ring(ops, [0-noop|_], clockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(11))], memory([cell(1, value(11)), cell(0, value(10))]), program(97-0))
+** going into interpret/2 with program(math, history(executed, last_instruction(0)), [ring(ops, [0-noop|_], counterclockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(11))], memory([cell(1, value(11)), cell(0, value(10))]), program(98-0))
+** going into interpret/2 with program(math, history(quescient, last_instruction(0)), [ring(math, [2-store|_], clockwise spin, value(11)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(1, value(11)), cell(0, value(10))]), program(99-1))
+** going into interpret/2 with program(math, history(quescient, last_instruction(1)), [ring(math, [3-add|_], clockwise spin, value(11)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(1, value(11)), cell(0, value(10))]), program(100-0))
+** going into interpret/2 with program(math, history(quescient, last_instruction(0)), [ring(math, [3-add|_], counterclockwise spin, value(11)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(1, value(11)), cell(0, value(10))]), program(101-0))
+** going into interpret/2 with program(ops, history(executed, last_instruction(0)), [ring(math, [3-add|_], clockwise spin, value(22)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(1, value(11)), cell(0, value(10))]), program(102-0))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(0)), [ring(ops, [0-noop|_], clockwise spin, value(1)), ring(math, [3-add|_], clockwise spin, value(22))], memory([cell(1, value(11)), cell(0, value(10))]), program(103-0))
+** going into interpret/2 with program(math, history(executed, last_instruction(0)), [ring(ops, [0-noop|_], counterclockwise spin, value(1)), ring(math, [3-add|_], clockwise spin, value(22))], memory([cell(1, value(11)), cell(0, value(10))]), program(104-0))
+** going into interpret/2 with program(math, history(quescient, last_instruction(0)), [ring(math, [3-add|_], counterclockwise spin, value(22)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(1, value(11)), cell(0, value(10))]), program(105-0))
+** going into interpret/2 with program(ops, history(executed, last_instruction(0)), [ring(math, [3-add|_], clockwise spin, value(33)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(1, value(11)), cell(0, value(10))]), program(106-0))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(0)), [ring(ops, [0-noop|_], clockwise spin, value(1)), ring(math, [3-add|_], clockwise spin, value(33))], memory([cell(1, value(11)), cell(0, value(10))]), program(107-0))
+** going into interpret/2 with program(math, history(executed, last_instruction(0)), [ring(ops, [0-noop|_], counterclockwise spin, value(1)), ring(math, [3-add|_], clockwise spin, value(33))], memory([cell(1, value(11)), cell(0, value(10))]), program(108-0))
+** going into interpret/2 with program(math, history(quescient, last_instruction(0)), [ring(math, [3-add|_], counterclockwise spin, value(33)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(1, value(11)), cell(0, value(10))]), program(109-0))
+** going into interpret/2 with program(ops, history(executed, last_instruction(0)), [ring(math, [3-add|_], clockwise spin, value(44)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(1, value(11)), cell(0, value(10))]), program(110-0))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(0)), [ring(ops, [0-noop|_], clockwise spin, value(1)), ring(math, [3-add|_], clockwise spin, value(44))], memory([cell(1, value(11)), cell(0, value(10))]), program(111-0))
+** going into interpret/2 with program(math, history(executed, last_instruction(0)), [ring(ops, [0-noop|_], counterclockwise spin, value(1)), ring(math, [3-add|_], clockwise spin, value(44))], memory([cell(1, value(11)), cell(0, value(10))]), program(112-0))
+** going into interpret/2 with program(math, history(quescient, last_instruction(0)), [ring(math, [3-add|_], counterclockwise spin, value(44)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(1, value(11)), cell(0, value(10))]), program(113-1))
+** going into interpret/2 with program(math, history(quescient, last_instruction(1)), [ring(math, [2-store|_], counterclockwise spin, value(44)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(1, value(11)), cell(0, value(10))]), program(114-0))
+** going into interpret/2 with program(math, history(quescient, last_instruction(0)), [ring(math, [2-store|_], clockwise spin, value(44)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(1, value(11)), cell(0, value(10))]), program(115-0))
+** going into interpret/2 with program(ops, history(executed, last_instruction(0)), [ring(math, [2-store|_], counterclockwise spin, value(44)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(1, value(44)), cell(0, value(10))]), program(116-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [11-ascIO|_], counterclockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(44))], memory([cell(1, value(44)), cell(0, value(10))]), program(117-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [10-intIO|_], counterclockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(44))], memory([cell(1, value(44)), cell(0, value(10))]), program(118-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [9-if|_], counterclockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(44))], memory([cell(1, value(44)), cell(0, value(10))]), program(119-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [8-logic|_], counterclockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(44))], memory([cell(1, value(44)), cell(0, value(10))]), program(120-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [7-dadd|_], counterclockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(44))], memory([cell(1, value(44)), cell(0, value(10))]), program(121-0))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(0)), [ring(ops, [7-dadd|_], clockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(44))], memory([cell(1, value(44)), cell(0, value(10))]), program(122-0))
+** going into interpret/2 with program(math, history(executed, last_instruction(0)), [ring(ops, [7-dadd|_], counterclockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(44))], memory([cell(2, 0), cell(1, value(44)), cell(0, value(10))]), program(123-0))
+** going into interpret/2 with program(math, history(quescient, last_instruction(0)), [ring(math, [2-store|_], clockwise spin, value(44)), ring(ops, [7-dadd|_], counterclockwise spin, value(1))], memory([cell(2, 0), cell(1, value(44)), cell(0, value(10))]), program(124-0))
+** going into interpret/2 with program(ops, history(executed, last_instruction(0)), [ring(math, [2-store|_], counterclockwise spin, value(44)), ring(ops, [7-dadd|_], counterclockwise spin, value(1))], memory([cell(2, value(44)), cell(1, value(44)), cell(0, value(10))]), program(125-0))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(0)), [ring(ops, [7-dadd|_], clockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(44))], memory([cell(2, value(44)), cell(1, value(44)), cell(0, value(10))]), program(126-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [8-logic|_], clockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(44))], memory([cell(2, value(44)), cell(1, value(44)), cell(0, value(10))]), program(127-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [9-if|_], clockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(44))], memory([cell(2, value(44)), cell(1, value(44)), cell(0, value(10))]), program(128-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [10-intIO|_], clockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(44))], memory([cell(2, value(44)), cell(1, value(44)), cell(0, value(10))]), program(129-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [11-ascIO|_], clockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(44))], memory([cell(2, value(44)), cell(1, value(44)), cell(0, value(10))]), program(130-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [0-noop|_], clockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(44))], memory([cell(2, value(44)), cell(1, value(44)), cell(0, value(10))]), program(131-0))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(0)), [ring(ops, [0-noop|_], counterclockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(44))], memory([cell(2, value(44)), cell(1, value(44)), cell(0, value(10))]), program(132-0))
+** going into interpret/2 with program(math, history(executed, last_instruction(0)), [ring(ops, [0-noop|_], clockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(44))], memory([cell(2, value(44)), cell(1, value(44)), cell(0, value(10))]), program(133-0))
+** going into interpret/2 with program(math, history(quescient, last_instruction(0)), [ring(math, [2-store|_], clockwise spin, value(44)), ring(ops, [0-noop|_], clockwise spin, value(1))], memory([cell(2, value(44)), cell(1, value(44)), cell(0, value(10))]), program(134-1))
+** going into interpret/2 with program(math, history(quescient, last_instruction(1)), [ring(math, [3-add|_], clockwise spin, value(44)), ring(ops, [0-noop|_], clockwise spin, value(1))], memory([cell(2, value(44)), cell(1, value(44)), cell(0, value(10))]), program(135-0))
+** going into interpret/2 with program(math, history(quescient, last_instruction(0)), [ring(math, [3-add|_], counterclockwise spin, value(44)), ring(ops, [0-noop|_], clockwise spin, value(1))], memory([cell(2, value(44)), cell(1, value(44)), cell(0, value(10))]), program(136-0))
+** going into interpret/2 with program(ops, history(executed, last_instruction(0)), [ring(math, [3-add|_], clockwise spin, value(88)), ring(ops, [0-noop|_], clockwise spin, value(1))], memory([cell(2, value(44)), cell(1, value(44)), cell(0, value(10))]), program(137-0))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(0)), [ring(ops, [0-noop|_], counterclockwise spin, value(1)), ring(math, [3-add|_], clockwise spin, value(88))], memory([cell(2, value(44)), cell(1, value(44)), cell(0, value(10))]), program(138-0))
+** going into interpret/2 with program(math, history(executed, last_instruction(0)), [ring(ops, [0-noop|_], clockwise spin, value(1)), ring(math, [3-add|_], clockwise spin, value(88))], memory([cell(2, value(44)), cell(1, value(44)), cell(0, value(10))]), program(139-0))
+** going into interpret/2 with program(math, history(quescient, last_instruction(0)), [ring(math, [3-add|_], counterclockwise spin, value(88)), ring(ops, [0-noop|_], clockwise spin, value(1))], memory([cell(2, value(44)), cell(1, value(44)), cell(0, value(10))]), program(140-0))
+** going into interpret/2 with program(ops, history(executed, last_instruction(0)), [ring(math, [3-add|_], clockwise spin, value(132)), ring(ops, [0-noop|_], clockwise spin, value(1))], memory([cell(2, value(44)), cell(1, value(44)), cell(0, value(10))]), program(141-0))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(0)), [ring(ops, [0-noop|_], counterclockwise spin, value(1)), ring(math, [3-add|_], clockwise spin, value(132))], memory([cell(2, value(44)), cell(1, value(44)), cell(0, value(10))]), program(142-0))
+** going into interpret/2 with program(math, history(executed, last_instruction(0)), [ring(ops, [0-noop|_], clockwise spin, value(1)), ring(math, [3-add|_], clockwise spin, value(132))], memory([cell(2, value(44)), cell(1, value(44)), cell(0, value(10))]), program(143-0))
+** going into interpret/2 with program(math, history(quescient, last_instruction(0)), [ring(math, [3-add|_], counterclockwise spin, value(132)), ring(ops, [0-noop|_], clockwise spin, value(1))], memory([cell(2, value(44)), cell(1, value(44)), cell(0, value(10))]), program(144-0))
+** going into interpret/2 with program(ops, history(executed, last_instruction(0)), [ring(math, [3-add|_], clockwise spin, value(176)), ring(ops, [0-noop|_], clockwise spin, value(1))], memory([cell(2, value(44)), cell(1, value(44)), cell(0, value(10))]), program(145-0))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(0)), [ring(ops, [0-noop|_], counterclockwise spin, value(1)), ring(math, [3-add|_], clockwise spin, value(176))], memory([cell(2, value(44)), cell(1, value(44)), cell(0, value(10))]), program(146-0))
+** going into interpret/2 with program(math, history(executed, last_instruction(0)), [ring(ops, [0-noop|_], clockwise spin, value(1)), ring(math, [3-add|_], clockwise spin, value(176))], memory([cell(2, value(44)), cell(1, value(44)), cell(0, value(10))]), program(147-0))
+** going into interpret/2 with program(math, history(quescient, last_instruction(0)), [ring(math, [3-add|_], counterclockwise spin, value(176)), ring(ops, [0-noop|_], clockwise spin, value(1))], memory([cell(2, value(44)), cell(1, value(44)), cell(0, value(10))]), program(148-0))
+** going into interpret/2 with program(ops, history(executed, last_instruction(0)), [ring(math, [3-add|_], clockwise spin, value(220)), ring(ops, [0-noop|_], clockwise spin, value(1))], memory([cell(2, value(44)), cell(1, value(44)), cell(0, value(10))]), program(149-0))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(0)), [ring(ops, [0-noop|_], counterclockwise spin, value(1)), ring(math, [3-add|_], clockwise spin, value(220))], memory([cell(2, value(44)), cell(1, value(44)), cell(0, value(10))]), program(150-0))
+** going into interpret/2 with program(math, history(executed, last_instruction(0)), [ring(ops, [0-noop|_], clockwise spin, value(1)), ring(math, [3-add|_], clockwise spin, value(220))], memory([cell(2, value(44)), cell(1, value(44)), cell(0, value(10))]), program(151-0))
+** going into interpret/2 with program(math, history(quescient, last_instruction(0)), [ring(math, [3-add|_], counterclockwise spin, value(220)), ring(ops, [0-noop|_], clockwise spin, value(1))], memory([cell(2, value(44)), cell(1, value(44)), cell(0, value(10))]), program(152-1))
+** going into interpret/2 with program(math, history(quescient, last_instruction(1)), [ring(math, [2-store|_], counterclockwise spin, value(220)), ring(ops, [0-noop|_], clockwise spin, value(1))], memory([cell(2, value(44)), cell(1, value(44)), cell(0, value(10))]), program(153-0))
+** going into interpret/2 with program(math, history(quescient, last_instruction(0)), [ring(math, [2-store|_], clockwise spin, value(220)), ring(ops, [0-noop|_], clockwise spin, value(1))], memory([cell(2, value(44)), cell(1, value(44)), cell(0, value(10))]), program(154-0))
+** going into interpret/2 with program(ops, history(executed, last_instruction(0)), [ring(math, [2-store|_], counterclockwise spin, value(220)), ring(ops, [0-noop|_], clockwise spin, value(1))], memory([cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(155-0))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(0)), [ring(ops, [0-noop|_], counterclockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(220))], memory([cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(156-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [11-ascIO|_], counterclockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(220))], memory([cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(157-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [10-intIO|_], counterclockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(220))], memory([cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(158-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [9-if|_], counterclockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(220))], memory([cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(159-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [8-logic|_], counterclockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(220))], memory([cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(160-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [7-dadd|_], counterclockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(220))], memory([cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(161-0))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(0)), [ring(ops, [7-dadd|_], clockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(220))], memory([cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(162-0))
+** going into interpret/2 with program(math, history(executed, last_instruction(0)), [ring(ops, [7-dadd|_], counterclockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(220))], memory([cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(163-1))
+** going into interpret/2 with program(math, history(quescient, last_instruction(1)), [ring(math, [1-load|_], counterclockwise spin, value(220)), ring(ops, [7-dadd|_], counterclockwise spin, value(1))], memory([cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(164-0))
+** going into interpret/2 with program(math, history(quescient, last_instruction(0)), [ring(math, [1-load|_], clockwise spin, value(220)), ring(ops, [7-dadd|_], counterclockwise spin, value(1))], memory([cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(165-0))
+** going into interpret/2 with program(ops, history(executed, last_instruction(0)), [ring(math, [1-load|_], counterclockwise spin, 0), ring(ops, [7-dadd|_], counterclockwise spin, value(1))], memory([cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(166-0))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(0)), [ring(ops, [7-dadd|_], clockwise spin, value(1)), ring(math, [1-load|_], counterclockwise spin, 0)], memory([cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(167-0))
+** going into interpret/2 with program(math, history(executed, last_instruction(0)), [ring(ops, [7-dadd|_], counterclockwise spin, value(1)), ring(math, [1-load|_], counterclockwise spin, 0)], memory([cell(4, 0), cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(168-0))
+** going into interpret/2 with program(math, history(quescient, last_instruction(0)), [ring(math, [1-load|_], clockwise spin, 0), ring(ops, [7-dadd|_], counterclockwise spin, value(1))], memory([cell(4, 0), cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(169-0))
+** going into interpret/2 with program(ops, history(executed, last_instruction(0)), [ring(math, [1-load|_], counterclockwise spin, 0), ring(ops, [7-dadd|_], counterclockwise spin, value(1))], memory([cell(4, 0), cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(170-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [6-padd|_], counterclockwise spin, value(1)), ring(math, [1-load|_], counterclockwise spin, 0)], memory([cell(4, 0), cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(171-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [5-store|_], counterclockwise spin, value(1)), ring(math, [1-load|_], counterclockwise spin, 0)], memory([cell(4, 0), cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(172-0))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(0)), [ring(ops, [5-store|_], clockwise spin, value(1)), ring(math, [1-load|_], counterclockwise spin, 0)], memory([cell(4, 0), cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(173-0))
+** going into interpret/2 with program(math, history(executed, last_instruction(0)), [ring(ops, [5-store|_], counterclockwise spin, value(1)), ring(math, [1-load|_], counterclockwise spin, 0)], memory([cell(4, value(1)), cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(174-0))
+** going into interpret/2 with program(math, history(quescient, last_instruction(0)), [ring(math, [1-load|_], clockwise spin, 0), ring(ops, [5-store|_], counterclockwise spin, value(1))], memory([cell(4, value(1)), cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(175-0))
+** going into interpret/2 with program(ops, history(executed, last_instruction(0)), [ring(math, [1-load|_], counterclockwise spin, value(1)), ring(ops, [5-store|_], counterclockwise spin, value(1))], memory([cell(4, value(1)), cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(176-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [4-load|_], counterclockwise spin, value(1)), ring(math, [1-load|_], counterclockwise spin, value(1))], memory([cell(4, value(1)), cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(177-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [3-zero|_], counterclockwise spin, value(1)), ring(math, [1-load|_], counterclockwise spin, value(1))], memory([cell(4, value(1)), cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(178-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [2-one|_], counterclockwise spin, value(1)), ring(math, [1-load|_], counterclockwise spin, value(1))], memory([cell(4, value(1)), cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(179-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [1-exit|_], counterclockwise spin, value(1)), ring(math, [1-load|_], counterclockwise spin, value(1))], memory([cell(4, value(1)), cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(180-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [0-noop|_], counterclockwise spin, value(1)), ring(math, [1-load|_], counterclockwise spin, value(1))], memory([cell(4, value(1)), cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(181-0))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(0)), [ring(ops, [0-noop|_], clockwise spin, value(1)), ring(math, [1-load|_], counterclockwise spin, value(1))], memory([cell(4, value(1)), cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(182-0))
+** going into interpret/2 with program(math, history(executed, last_instruction(0)), [ring(ops, [0-noop|_], counterclockwise spin, value(1)), ring(math, [1-load|_], counterclockwise spin, value(1))], memory([cell(4, value(1)), cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(183-0))
+** going into interpret/2 with program(math, history(quescient, last_instruction(0)), [ring(math, [1-load|_], clockwise spin, value(1)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(4, value(1)), cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(184-1))
+** going into interpret/2 with program(math, history(quescient, last_instruction(1)), [ring(math, [2-store|_], clockwise spin, value(1)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(4, value(1)), cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(185-1))
+** going into interpret/2 with program(math, history(quescient, last_instruction(1)), [ring(math, [3-add|_], clockwise spin, value(1)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(4, value(1)), cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(186-0))
+** going into interpret/2 with program(math, history(quescient, last_instruction(0)), [ring(math, [3-add|_], counterclockwise spin, value(1)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(4, value(1)), cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(187-0))
+** going into interpret/2 with program(ops, history(executed, last_instruction(0)), [ring(math, [3-add|_], clockwise spin, value(2)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(4, value(1)), cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(188-0))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(0)), [ring(ops, [0-noop|_], clockwise spin, value(1)), ring(math, [3-add|_], clockwise spin, value(2))], memory([cell(4, value(1)), cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(189-0))
+** going into interpret/2 with program(math, history(executed, last_instruction(0)), [ring(ops, [0-noop|_], counterclockwise spin, value(1)), ring(math, [3-add|_], clockwise spin, value(2))], memory([cell(4, value(1)), cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(190-0))
+** going into interpret/2 with program(math, history(quescient, last_instruction(0)), [ring(math, [3-add|_], counterclockwise spin, value(2)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(4, value(1)), cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(191-0))
+** going into interpret/2 with program(ops, history(executed, last_instruction(0)), [ring(math, [3-add|_], clockwise spin, value(3)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(4, value(1)), cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(192-0))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(0)), [ring(ops, [0-noop|_], clockwise spin, value(1)), ring(math, [3-add|_], clockwise spin, value(3))], memory([cell(4, value(1)), cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(193-0))
+** going into interpret/2 with program(math, history(executed, last_instruction(0)), [ring(ops, [0-noop|_], counterclockwise spin, value(1)), ring(math, [3-add|_], clockwise spin, value(3))], memory([cell(4, value(1)), cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(194-0))
+** going into interpret/2 with program(math, history(quescient, last_instruction(0)), [ring(math, [3-add|_], counterclockwise spin, value(3)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(4, value(1)), cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(195-1))
+** going into interpret/2 with program(math, history(quescient, last_instruction(1)), [ring(math, [2-store|_], counterclockwise spin, value(3)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(4, value(1)), cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(196-0))
+** going into interpret/2 with program(math, history(quescient, last_instruction(0)), [ring(math, [2-store|_], clockwise spin, value(3)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(4, value(1)), cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(197-0))
+** going into interpret/2 with program(ops, history(executed, last_instruction(0)), [ring(math, [2-store|_], counterclockwise spin, value(3)), ring(ops, [0-noop|_], counterclockwise spin, value(1))], memory([cell(4, value(3)), cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(198-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [11-ascIO|_], counterclockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(3))], memory([cell(4, value(3)), cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(199-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [10-intIO|_], counterclockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(3))], memory([cell(4, value(3)), cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(200-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [9-if|_], counterclockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(3))], memory([cell(4, value(3)), cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(201-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [8-logic|_], counterclockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(3))], memory([cell(4, value(3)), cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(202-1))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(1)), [ring(ops, [7-dadd|_], counterclockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(3))], memory([cell(4, value(3)), cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(203-0))
+** going into interpret/2 with program(ops, history(quescient, last_instruction(0)), [ring(ops, [7-dadd|_], clockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(3))], memory([cell(4, value(3)), cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(204-0))
+** going into interpret/2 with program(math, history(executed, last_instruction(0)), [ring(ops, [7-dadd|_], counterclockwise spin, value(1)), ring(math, [2-store|_], counterclockwise spin, value(3))], memory([cell(5, 0), cell(4, value(3)), cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(205-1))
+** going into interpret/2 with program(math, history(quescient, last_instruction(1)), [ring(math, [1-load|_], counterclockwise spin, value(3)), ring(ops, [7-dadd|_], counterclockwise spin, value(1))], memory([cell(5, 0), cell(4, value(3)), cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(206-1))
+** going into interpret/2 with program(math, history(quescient, last_instruction(1)), [ring(math, [0-noop|_], counterclockwise spin, value(3)), ring(ops, [7-dadd|_], counterclockwise spin, value(1))], memory([cell(5, 0), cell(4, value(3)), cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(207-1))
+** going into interpret/2 with program(math, history(quescient, last_instruction(1)), [ring(math, [11-neg|_], counterclockwise spin, value(3)), ring(ops, [7-dadd|_], counterclockwise spin, value(1))], memory([cell(5, 0), cell(4, value(3)), cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(208-0))
+** going into interpret/2 with program(math, history(quescient, last_instruction(0)), [ring(math, [11-neg|_], clockwise spin, value(3)), ring(ops, [7-dadd|_], counterclockwise spin, value(1))], memory([cell(5, 0), cell(4, value(3)), cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(209-0))
+!! FAILED ON CMD: program(math, history(quescient, last_instruction(0)), [ring(math, [11-neg|_], clockwise spin, value(3)), ring(ops, [7-dadd|_], counterclockwise spin, value(1))], memory([cell(5, 0), cell(4, value(3)), cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(209-0))
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay
+** okay

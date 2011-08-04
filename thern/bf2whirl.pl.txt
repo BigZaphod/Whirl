@@ -1,0 +1,148 @@
+#!/usr/bin/perl -w
+my $usage =<<EOU;
+bf2whirl.pl - converts brainfuck to whirl
+options:
+  -h      This help
+  -b      Append a bang ("!") character at the end
+license: Public Domain
+EOU
+
+use strict;
+use vars qw/ $opt_h $opt_b /;
+use Getopt::Std;
+
+getopts('hb');
+print($usage), exit 0 if $opt_h;
+
+my $prog = join '', <>;
+my @prog = split '', $prog;
+
+my %ops =
+  ( "<" => "110001100111110001000111001110000" .
+    "111100000111100011100111010000000000011110000111101",
+    ">" => "1100001111100000000011110000111101",
+    "+" => "0001100000111110000010000011110000111111000101",
+    "-" => "00011000001000011110000010000011110000111111000101",
+    "," => "111000011000011111100001",
+    "." => "110000011100000111100000111101"
+);
+
+sub genwhirl {
+  my $code = "";
+  while (my $char = shift @prog) {
+    return $code if $char eq "]";
+    if ($char eq "[") {
+      my $restore = "0110011111100010000111001111001111" .
+        "00000111100111001110100011110000111101";
+      my $code2 = $restore . genwhirl();
+      my $jmp = 16;
+      while (1) {
+        my $code3 = mk_mul_8($jmp, 1);
+        if ($jmp < length($code2 . $code3)) {
+          $jmp += 8;
+          next;
+        } elsif ($jmp > length($code2 . $code3)) {
+          if ($jmp - length($code2 . $code3) == 2) {
+            $jmp += 8;
+            next;
+          }
+          $code .= mk_mul_8($jmp) . $code2 . substr($code3, 0, -1) .
+            ("1" x (($jmp - length($code2 . $code3) - 2) / 2)) . "0" .
+              ("1" x (($jmp - length($code2 . $code3) - 2) / 2)) . "00" .
+                $restore;
+          last;
+        } else {
+          $code .= mk_mul_8($jmp) . $code2 . $code3 . $restore;
+          last;
+        }
+      }
+    } else {
+      next unless $char =~ /[-+<>,.]/;
+      $code .= $ops{$char};
+    }
+  }
+  return $code;
+}
+
+sub mk_mul_8 {
+  my $x = shift;
+  my $back = shift;
+  # assume bf,?,+0+,0,-0+
+  #  -> bf+,8,-4-,8,+2-
+  my $code = "1100100111110001110001111100" . ($back ? "0000" : "") .
+    "01111000010000010000011000000000110000";
+  my @o = ();
+  while ($x>8) {
+    if (($x/8)%8) {
+      push @o, 1;
+      $x-=8;
+    } else {
+      push @o, 0;
+      $x/=8;
+    }
+  }
+
+  my $d = 0;
+  my $p = 2;
+  for (reverse(@o)) {
+    if ($_) {
+      $code .= "01" if $p == 2 or $p == 4;
+      $code .= "0000";
+      $d = $p == 2 ? 1 : ($p == 4 ? 0 : $d);
+      $p = 3;
+    } else {
+      if ($p == 2) {
+        $code .= "011";
+      } elsif ($p == 3) {
+        $code .= ($d ? "" : "0") . "1";
+      }
+      $code .= "0000";
+      $p = 4;
+      $d = 1;
+    }
+  }
+
+  # negate, if backward
+  if ($back) {
+    if ($p == 4) {
+      $code .= "01111100";
+     } else {
+       $code .= ($d ? "0" : "") . "111100";
+     }
+  }
+
+  # add 1
+  if ($back) {
+    $code .= "0111000111100";
+    $p = 3;
+    $d = 1;
+  } else {
+    # strip the last 2 zeros & store a 1
+    $code = substr($code, 0, -2) . "011100";
+    if ($p == 4) {
+      $code .= "0100";
+      $p = 3;
+      $d = 0;
+    } else {
+      $code .= "00";
+    }
+  }
+
+  # move ops to load
+  $code .= "0100";
+
+  # store the jump & load in ops
+  $code .= ($d ? "0" : "") . "10000";
+
+  # move math to zero & noop ops & store 0
+  $code .= "01111001111000111100";
+
+  # noop ops & noop math & jump
+  $code .= "001110100011111100";
+
+  return $code;
+}
+
+print genwhirl(), "\n";
+
+exit;

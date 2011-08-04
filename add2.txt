@@ -1,0 +1,32 @@
+// NOTE: This version will not work as-is with the C++ version
+// as some of the comments include numbers.  coljac's Java
+// version avoids this problem.  Just strip out the comments
+// if you want to run it with the C++ version.  The actual
+// code is perfectly compatible.
+
+// Adds two numbers
+01100000 // First number at mem[0], OPS INTIO CW / MATH NOOP CW 
+11110000 // Value set to 1 
+111110000 // Dadd(1) - Mem index set to 1 
+011110000 // Value set to 0
+111110000 // Now the two inputs are in mem[0] and mem[1]
+// Ops wheel, ccw, INTIO; (math wheel noop)
+011110000111110000
+// Mem index at 2
+01100
+// Mem[2] = 1, now at Math noop cw (ops store ccw)
+10000
+// (math) Val = 1
+01100
+// Val = -1
+1111100 // Noop, back to math
+011100 // Mem[2] = -1, back to ops: NOOP CCW, math STORE CW
+011110001100 // Ops val = -1, back at ops load CW (math noop ccw)
+11100000000 // Decrement mem pointer to 0
+01111100 // Val = 1
+// Now we're back at math, noop ccw (ops one ccw)
+010001111100 // Incremented mem pointer to 1, back to math
+11001111100 // Add memval to value (x1 + x2)
+0100 // Store the result
+01100 // Print the result
+

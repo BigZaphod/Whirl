@@ -1,0 +1,1 @@
+!! FAILED ON CMD: program(math, history(quescient, last_instruction(0)), [ring(math, [11-neg|_], clockwise spin, value(3)), ring(ops, [7-dadd|_], counterclockwise spin, value(1))], memory([cell(5, 0), cell(4, value(3)), cell(3, 0), cell(2, value(220)), cell(1, value(44)), cell(0, value(10))]), program(209-0))
