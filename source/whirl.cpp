@@ -7,6 +7,7 @@
 //--------------------------------------------
 #include <vector>
 #include <stdio.h>
+#include <stdlib.h>
 
 typedef std::vector<int>  mem_t;
 typedef std::vector<bool> prog_t;
@@ -280,7 +281,9 @@ int main( int argc, char** argv )
 
 	fclose( f );
 
+#ifndef NO_GREETINGS
 	printf( "Welcome to Whirl!\n\nExecuting [%s]...\n\n", argv[1] );
+#endif
 
     // init main memory.
     memory.push_back( 0 );
