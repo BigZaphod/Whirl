@@ -7,6 +7,7 @@
 //--------------------------------------------
 #include <vector>
 #include <stdio.h>
+#include <stdlib.h>
 
 typedef std::vector<int>  mem_t;
 typedef std::vector<bool> prog_t;
